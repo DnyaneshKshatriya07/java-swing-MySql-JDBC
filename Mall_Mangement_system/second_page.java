@@ -141,7 +141,7 @@ public class second_page extends JFrame {
 					Class.forName("com.mysql.jdbc.Driver"); 
 					//jdbc:mysql://hostname:port/database?useSSL=true&trustCertificateKeyStoreUrl=file:/path/to/truststore.jks&trustCertificateKeyStorePassword=yourPassword
 					System.out.print("connected");				
-					Connection con=(Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/cart","root","Dnyanesh@7123");
+					Connection con=(Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/cart","root","your_password_of_mysql_server");
 					PreparedStatement ps=(PreparedStatement) con.prepareStatement("insert into admin values(?, ?, ?, ?, ?)");
 					ps.setLong(1, S1);
 					ps.setLong(2, P1);

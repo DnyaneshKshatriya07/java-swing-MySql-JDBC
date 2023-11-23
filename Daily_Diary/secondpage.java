@@ -132,7 +132,7 @@ public class secondpage extends JFrame {
 					Class.forName("com.mysql.jdbc.Driver"); 
 					//jdbc:mysql://hostname:port/database?useSSL=true&trustCertificateKeyStoreUrl=file:/path/to/truststore.jks&trustCertificateKeyStorePassword=yourPassword
 					System.out.print("connected");				
-					Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/Daily_Dairy","root","Dnyanesh@7123");
+					Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/Daily_Dairy","root","your_password_of_mysql_server");
 					PreparedStatement ps=con.prepareStatement("insert into Dairy values(?,?,?,?,?)");
 					ps.setString(1, N);
 					ps.setString(2, E);

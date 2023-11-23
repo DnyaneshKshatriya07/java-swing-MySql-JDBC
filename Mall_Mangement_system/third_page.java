@@ -136,7 +136,7 @@ public class third_page extends JFrame {
 					Class.forName("com.mysql.jdbc.Driver"); 
 					//jdbc:mysql://hostname:port/database?useSSL=true&trustCertificateKeyStoreUrl=file:/path/to/truststore.jks&trustCertificateKeyStorePassword=yourPassword
 					System.out.print("Deleted");				
-					Connection con=(Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/cart","root","Dnyanesh@7123");
+					Connection con=(Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/cart","root","your_password_of_mysql_server");
 					PreparedStatement ps=(PreparedStatement) con.prepareStatement("delete from seller where sr_no=?");
 					ps.setLong(1, P1);
 					
